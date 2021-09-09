@@ -30,7 +30,7 @@ class ServiceLocator
     }
 
     /**
-     * Register components.
+     * Register services.
      * @param array $services
      */
     public function registerServices(array $services): void

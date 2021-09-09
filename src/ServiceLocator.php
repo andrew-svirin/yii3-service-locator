@@ -30,10 +30,10 @@ class ServiceLocator
     }
 
     /**
-     * Register services.
+     * Register all services.
      * @param array $services
      */
-    public function registerServices(array $services): void
+    public function setAll(array $services): void
     {
         $this->services = $services;
     }
@@ -48,9 +48,9 @@ class ServiceLocator
     }
 
     /**
-     * Instantiate strategy by alias.
+     * Instantiate service by alias.
      */
-    public function instantiate(string $alias): ?ServiceInterface
+    public function get(string $alias): ?ServiceInterface
     {
         foreach ($this->services as $classAlias => $className) {
             if ($alias !== $classAlias) {

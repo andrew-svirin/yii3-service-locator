@@ -57,10 +57,10 @@ class ServiceLocator
                 continue;
             }
 
-            $strategy = $this->container->get($className);
+            $service = $this->container->get($className);
         }
 
-        return $strategy ?? null;
+        return $service ?? null;
     }
 
     public static function create(ContainerInterface $container): self

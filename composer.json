@@ -1,0 +1,13 @@
+{
+  "type": "component",
+  "require": {
+    "php": ">=7.4.0 <8.0.0"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "Yii\\Component\\": "src"
+    }
+  }
+}
